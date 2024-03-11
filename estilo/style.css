@@ -51,6 +51,12 @@ header > h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.451);
 }
 
+@media screen and (max-width: 230px) {
+  header h1 {
+    font-size: 2em;
+  }
+}
+
 header p {
   text-align: center;
   margin: 8px 0px;
@@ -73,6 +79,13 @@ nav > a {
 
 nav > a:hover {
   background-color: var(--cor3);
+}
+
+@media screen and (max-width: 440px) {
+  nav > a {
+    display: block;
+    text-align: center;
+  }
 }
 
 main {
@@ -106,6 +119,13 @@ main > article > h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (max-width: 230px) {
+  main > article > h1,
+  h2 {
+    font-size: 1.1em;
+  }
+}
+
 main h2 {
   font-family: var(--fonte-idroid);
   color: #1a5a37f5;
@@ -114,6 +134,12 @@ main h2 {
   margin: 14px;
   border-radius: 10px;
   padding: 1px 10px;
+}
+
+@media screen and (max-width: 185px) {
+  main article p {
+    text-indent: 0px;
+  }
 }
 
 main p {
@@ -180,19 +206,18 @@ h3 {
   border-radius: 0px 0px 10px 10px;
 }
 
+@media screen and (max-width: 550px) {
+  div.lista > ul {
+    columns: 1;
+    margin: 40px auto;
+  }
+}
+
 ul {
-  /* Outra forma de trocar o símbolo das listas, porém não é compatível com todo navegador:
   list-style-type: "\2714\00A0\00A0";
-  */
-  display: inline;
   list-style-position: inside;
   columns: 2;
   margin: 40px;
-}
-
-ul li::before {
-  content: "\2714";
-  padding-right: 8px;
 }
 
 footer {
